@@ -61,4 +61,10 @@ class UsuariosController extends Controller{
     $usuario->delete();
     return redirect('/usuarios/lista');
   }
+
+  //CONTROLE DE ACESSO
+  public function controleAcesso(){
+    $usuarios = Usuario::all();
+    return view('usuarios.controleAcesso',compact('usuarios'));
+  }
 }

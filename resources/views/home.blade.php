@@ -16,6 +16,7 @@
                   <ul>
                     <a href="/usuarios/lista"><li> Listar Usuarios</li> </a>
                     <a href="/usuarios/cadastrarNovo"><li> Cadastrar Usuario</li></a>
+                    <a href="/usuarios/controleAcesso"><li> Controle de Acesso</li></a>
                   </ul>
                   <ul>
                     <a href="/emprestimos/lista"><li> Listar empréstimos</li> </a>

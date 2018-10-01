@@ -43,6 +43,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/usuarios/{usuario}/deletar','UsuariosController@deletar');
     Route::get('/usuarios/{usuario}/BDdeletar','UsuariosController@BDdeletar');
 
+    //CONTROLE DE ACESSO
+    Route::get('/usuarios/controleAcesso', 'UsuariosController@controleAcesso');
 
     // EMPRESTIMO
     // CREATE
