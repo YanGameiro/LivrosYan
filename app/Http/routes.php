@@ -70,6 +70,14 @@ Route::group(['middleware' => 'web'], function () {
   //DELETE
   Route::get('/emprestimos/{emprestimo}/deletar','EmprestimosController@deletar');
   Route::get('/emprestimos/{emprestimo}/BDdeletar','EmprestimosController@BDdeletar');
+
+  Route::get('/normal',function(){
+    if(Auth::user()->super == 0){
+        return view('livros.cadastrarNovo');
+    }else{
+        return view('usuarios.cadastrarNovo');
+    }
+});
 });
 
 
@@ -77,6 +85,6 @@ Route::group(['middleware' => 'web'], function () {
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
-
+    
     Route::get('/home', 'HomeController@index');
 });
