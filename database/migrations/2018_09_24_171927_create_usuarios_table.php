@@ -13,6 +13,8 @@ class CreateUsuariosTable extends Migration
             $table->string('login');
             $table->string('senha');
             $table->integer('nivel');
+            $table->integer('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

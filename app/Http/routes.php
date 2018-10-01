@@ -68,5 +68,9 @@ Route::group(['middleware' => 'web'], function () {
             return view('usuarios.cadastrarNovo');
         }
     });
-    
+
+    Route::get('/teste',function(){
+        return view('usuarios.teste');
+    });
+
 });
