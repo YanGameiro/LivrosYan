@@ -24,7 +24,7 @@
                 @if($usuario->id_user != 0)
                     {{$usuario->user->email}}
                 @else
-                    <a href="">
+                    <a href="/usuarios/{{$usuario->id}}/configurarAcesso">
                         <button  type="button" class="btn btn-warning">Configurar Acesso</button>
                     </a>
                 @endif

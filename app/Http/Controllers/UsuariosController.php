@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Usuario;
+use App\User;
 
 class UsuariosController extends Controller{
   
@@ -66,5 +67,17 @@ class UsuariosController extends Controller{
   public function controleAcesso(){
     $usuarios = Usuario::all();
     return view('usuarios.controleAcesso',compact('usuarios'));
+  }
+
+  public function configurarAcesso(Usuario $usuario){
+    $users = User::all();
+    return view('usuarios.configurarAcesso',compact('usuario','users'));
+  }
+
+  public function BDconfigurarAcesso(Usuario $usuario){
+    $usuario->update([
+      'id_user' => request('user')
+    ]);
+    return redirect('/usuarios/controleAcesso');
   }
 }
