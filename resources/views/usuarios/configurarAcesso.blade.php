@@ -1,5 +1,15 @@
 @extends('layouts.app') 
 @section('content')
+
+<style>
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+</style>
+<body class="text-center">
 <div class="container">
 
     <p>Para configurar o acesso do usuário {{$usuario->nome}}, basta escolher algum dos Logins disponíveis.</p> 
@@ -20,7 +30,9 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Configurar Acesso</button>
     </form>
 
-    <p>caso esse usuário ainda não possua um login para ele, crie um login clicando aqui. </p>
+    <p>caso esse usuário ainda não possua um login para ele, crie um login na página de registro. </p>
+    <p>OBS: futuramente será possível cadastrar um novo login sem a necessidade de deslogar, mas isso ainda não foi implementado</p>
 
 </div>
+</body>
 @endsection
