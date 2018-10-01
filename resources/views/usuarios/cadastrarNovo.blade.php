@@ -18,9 +18,7 @@
 
     <input type="nome" id="inputNome" name="nome" class="form-control" placeholder="Nome do usuario" required autofocus>
 
-    <input type="login" id="inputLogin" name="login" class="form-control" placeholder="Login" required>
-
-    <input type="password" id="inputSenha" name="senha" class="form-control" placeholder="Senha" required>
+    <input type="documento" id="inputDocumento" name="documento" class="form-control" placeholder="Documento de Identidade" required>
 
     <select id="inputNivel" name="nivel" class="form-control" required>
       <option value="" disabled selected>Nivel</option>

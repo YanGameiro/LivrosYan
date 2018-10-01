@@ -18,9 +18,7 @@
 
     <input type="nome" id="inputNome" name="nome" class="form-control" value="{{$usuario->nome}}" required autofocus>
 
-    <input type="login" id="inputLogin" name="login" class="form-control" value="{{$usuario->login}}" required>
-
-    <input type="password" id="inputSenha" name="senha" class="form-control" value="{{$usuario->senha}}" required>
+    <input type="documento" id="inputDocumento" name="documento" class="form-control" value="{{$usuario->documento}}" required>
 
     <select id="inputNivel" name="nivel" class="form-control" required>
       <option @if ($usuario->nivel == 1) selected @endif value="1">1</option>

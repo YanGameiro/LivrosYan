@@ -10,8 +10,7 @@ class CreateUsuariosTable extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->string('login');
-            $table->string('senha');
+            $table->string('documento');
             $table->integer('nivel');
             $table->integer('id_user');
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');

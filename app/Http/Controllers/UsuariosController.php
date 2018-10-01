@@ -24,8 +24,7 @@ class UsuariosController extends Controller{
   public function BDcadastrarNovo(){
     Usuario::create([
       'nome' => request('nome'),
-      'login' => request('login'),
-      'senha' => request('senha'),
+      'documento' => request('documento'),
       'nivel' => request('nivel')      
     ]);
      return redirect('/usuarios/lista');
@@ -47,8 +46,7 @@ class UsuariosController extends Controller{
   public function BDeditar(Usuario $usuario){
     $usuario->update([
       'nome' => request('nome'),
-      'login' => request('login'),
-      'senha' => request('senha'),
+      'documento' => request('documento'),
       'nivel' => request('nivel')  
     ]);
     return redirect('/usuarios/lista');

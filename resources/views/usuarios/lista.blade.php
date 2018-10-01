@@ -9,7 +9,7 @@
           <thead>
             <tr>
               <th scope="col">nome</th>
-              <th scope="col">login</th>
+              <th scope="col">documento</th>
               <th scope="col">nivel</th>
               <th scope="col"> </th>
               <th scope="col"> </th>
@@ -19,7 +19,7 @@
             @foreach ($usuarios as $usuario)
             <tr>
               <td>{{$usuario->nome}}</td>
-              <td>{{$usuario->login}}</td>
+              <td>{{$usuario->documento}}</td>
               <td>{{$usuario->nivel}}</td>
 
 

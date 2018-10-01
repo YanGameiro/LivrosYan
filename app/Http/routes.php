@@ -69,8 +69,4 @@ Route::group(['middleware' => 'web'], function () {
         }
     });
 
-    Route::get('/teste',function(){
-        return view('usuarios.teste');
-    });
-
 });

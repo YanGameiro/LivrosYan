@@ -9,14 +9,14 @@
           <thead>
             <tr>
               <th scope="col">nome</th>
-              <th scope="col">login</th>
+              <th scope="col">documento</th>
               <th scope="col">nivel</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>{{$usuario->nome}}</td>
-              <td>{{$usuario->login}}</td>
+              <td>{{$usuario->documento}}</td>
               <td>{{$usuario->nivel}}</td>
 
             </tr>
