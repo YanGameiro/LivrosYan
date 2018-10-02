@@ -15,7 +15,7 @@ class CreateUsuariosTable extends Migration
             $table->string('nome');
             $table->string('documento');
             $table->integer('nivel');
-            $table->integer('id_user')->unsigned();
+            $table->integer('id_user')->unsigned()->nullable();
             $table->foreign('id_user')->references('id')->on('users');
             $table->timestamps();
         });
