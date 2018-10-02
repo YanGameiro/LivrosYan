@@ -3,7 +3,7 @@
 Como abrir o projeto corretamente (no windows):
   - Instale o Git Bash (gitforwindows.org);
   - Ecolha uma pasta que você gostaria de ter o projeto, abra um terminal nela;
-  - Clone o repositório com "git clone https://github.com/YanGameiro/Mini-CRM-Yan.git";
+  - Clone o repositório com "git clone https://github.com/YanGameiro/LivrosYan";
   - Instale o xampp (www.apachefriends.org);
   - Instale o composer (www.getcomposer.org);
   - Vá com um terminal para a pasta \xampp\htdocs;
