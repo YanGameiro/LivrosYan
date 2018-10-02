@@ -13,7 +13,7 @@ class CreateUsuariosTable extends Migration
             $table->string('documento');
             $table->integer('nivel');
             $table->integer('id_user');
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_user')->references('id')->on('users');
             $table->timestamps();
         });
     }
