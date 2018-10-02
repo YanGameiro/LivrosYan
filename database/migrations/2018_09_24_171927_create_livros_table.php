@@ -8,6 +8,9 @@ class CreateLivrosTable extends Migration
     public function up()
     {
         Schema::create('livros', function (Blueprint $table) {
+
+            $table->engine = 'InnoDB';
+
             $table->increments('id');
             $table->string('nome');
             $table->string('autor');

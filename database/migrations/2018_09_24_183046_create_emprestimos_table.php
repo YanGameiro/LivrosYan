@@ -8,6 +8,9 @@ class CreateEmprestimosTable extends Migration
     public function up()
     {
         Schema::create('emprestimos', function (Blueprint $table) {
+
+            $table->engine = 'InnoDB';
+
             $table->increments('id');
             $table->string('data_inicio');
             $table->string('data_fim');
